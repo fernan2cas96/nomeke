@@ -36,7 +36,6 @@ class ProductPolicy
         $policyId = 5;
         $roleNumber = Privilege::select('role_header')->where('id' , $user->privilege_id)->first();
         $granted = Policy::select($roleNumber)->where('id',$policyId)->get();
-        $respuesta;
 
         if ($granted->$roleNumber == 1){
             $respuesta = true;
