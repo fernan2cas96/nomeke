@@ -1,5 +1,120 @@
 [
     {
+        "name": "adldap2/adldap2",
+        "version": "v10.0.11",
+        "version_normalized": "10.0.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Adldap2/Adldap2.git",
+            "reference": "beb3c9cc28de752d6c3b0221605035659eccc42e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Adldap2/Adldap2/zipball/beb3c9cc28de752d6c3b0221605035659eccc42e",
+            "reference": "beb3c9cc28de752d6c3b0221605035659eccc42e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-ldap": "*",
+            "illuminate/contracts": "~5.0",
+            "php": ">=7.0",
+            "psr/log": "~1.0",
+            "tightenco/collect": "~5.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "~1.0",
+            "phpunit/phpunit": "~6.0"
+        },
+        "suggest": {
+            "ext-fileinfo": "fileinfo is required when retrieving user encoded thumbnails"
+        },
+        "time": "2019-05-24T14:15:58+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Adldap\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Steve Bauman",
+                "role": "Developer",
+                "email": "steven_bauman@outlook.com"
+            }
+        ],
+        "description": "A PHP LDAP Package for humans.",
+        "keywords": [
+            "active directory",
+            "ad",
+            "adLDAP",
+            "adldap2",
+            "directory",
+            "ldap",
+            "windows"
+        ]
+    },
+    {
+        "name": "adldap2/adldap2-laravel",
+        "version": "v6.0.7",
+        "version_normalized": "6.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Adldap2/Adldap2-Laravel.git",
+            "reference": "e7e60f0f10ff845bf8e8c965258c86a33c9ab266"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Adldap2/Adldap2-Laravel/zipball/e7e60f0f10ff845bf8e8c965258c86a33c9ab266",
+            "reference": "e7e60f0f10ff845bf8e8c965258c86a33c9ab266",
+            "shasum": ""
+        },
+        "require": {
+            "adldap2/adldap2": "^10.0",
+            "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "mockery/mockery": "~1.0",
+            "orchestra/testbench": "~3.7",
+            "phpunit/phpunit": "~7.0"
+        },
+        "time": "2019-06-28T17:34:46+00:00",
+        "type": "project",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Adldap\\Laravel\\AdldapServiceProvider",
+                    "Adldap\\Laravel\\AdldapAuthServiceProvider"
+                ],
+                "aliases": {
+                    "Adldap": "Adldap\\Laravel\\Facades\\Adldap"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Adldap\\Laravel\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "LDAP Authentication & Management for Laravel.",
+        "keywords": [
+            "adLDAP",
+            "adldap2",
+            "laravel",
+            "ldap"
+        ]
+    },
+    {
         "name": "appointer/swaggervel",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -6947,6 +7062,58 @@
             }
         ],
         "description": "A small library for converting tokenized PHP source code into XML and potentially other formats"
+    },
+    {
+        "name": "tightenco/collect",
+        "version": "v5.8.32",
+        "version_normalized": "5.8.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tightenco/collect.git",
+            "reference": "957e430c26c51b65c80acc87896023229dc05a21"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tightenco/collect/zipball/957e430c26c51b65c80acc87896023229dc05a21",
+            "reference": "957e430c26c51b65c80acc87896023229dc05a21",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/var-dumper": ">=3.4 <5"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.0",
+            "nesbot/carbon": "^1.26.3",
+            "phpunit/phpunit": "^7.0"
+        },
+        "time": "2019-07-30T19:16:47+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/Collect/Support/helpers.php",
+                "src/Collect/Support/alias.php"
+            ],
+            "psr-4": {
+                "Tightenco\\Collect\\": "src/Collect"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "Collect - Illuminate Collections as a separate package.",
+        "keywords": [
+            "collection",
+            "laravel"
+        ]
     },
     {
         "name": "tijsverkoyen/css-to-inline-styles",

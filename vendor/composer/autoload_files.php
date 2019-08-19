@@ -28,6 +28,8 @@ return array(
     'a0edc8309cc5e1d60e3047b5df6b7052' => $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
     'f0906e6318348a765ffb6eb24e0d0938' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
     '58571171fd5812e6e447dce228f52f4d' => $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
+    'fe62ba7e10580d903cc46d808b5961a4' => $vendorDir . '/tightenco/collect/src/Collect/Support/helpers.php',
+    'caf31cc6ec7cf2241cb6f12c226c3846' => $vendorDir . '/tightenco/collect/src/Collect/Support/alias.php',
     '0ccdf99b8f62f02c52cba55802e0c2e7' => $vendorDir . '/zircote/swagger-php/src/functions.php',
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
     'e23faeee409e941dc9b4c80386209c39' => $vendorDir . '/laracasts/flash/src/Laracasts/Flash/functions.php',

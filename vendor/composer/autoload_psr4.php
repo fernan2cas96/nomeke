@@ -13,6 +13,7 @@ return array(
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
+    'Tightenco\\Collect\\' => array($vendorDir . '/tightenco/collect/src/Collect'),
     'Tests\\' => array($baseDir . '/tests'),
     'Symfony\\Polyfill\\Php73\\' => array($vendorDir . '/symfony/polyfill-php73'),
     'Symfony\\Polyfill\\Php72\\' => array($vendorDir . '/symfony/polyfill-php72'),
@@ -94,4 +95,6 @@ return array(
     'Barryvdh\\LaravelIdeHelper\\' => array($vendorDir . '/barryvdh/laravel-ide-helper/src'),
     'Appzcoder\\CrudGenerator\\' => array($vendorDir . '/appzcoder/crud-generator/src'),
     'App\\' => array($baseDir . '/app'),
+    'Adldap\\Laravel\\' => array($vendorDir . '/adldap2/adldap2-laravel/src'),
+    'Adldap\\' => array($vendorDir . '/adldap2/adldap2/src'),
 );
